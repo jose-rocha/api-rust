@@ -4,6 +4,8 @@ use serde_json;
 
 #[get("/")]
 async fn hello() -> impl Responder {
+    println!("Hello Rust");
+
     HttpResponse::Ok().body("Hello world!")
 }
 
